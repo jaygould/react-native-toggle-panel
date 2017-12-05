@@ -1,0 +1,17 @@
+{
+  "name": "react-native-toggle-panel",
+  "version": "0.0.1",
+  "description": "A simple and lightweight collapsible panel for React Native, with options for animation and other useful styling.",
+  "main": "TogglePanel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "collapsible",
+    "panel"
+  ],
+  "author": "",
+  "license": "ISC"
+}
