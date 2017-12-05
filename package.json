@@ -12,6 +12,14 @@
     "collapsible",
     "panel"
   ],
-  "author": "",
-  "license": "ISC"
+  "author": "Jay Gould",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaygould/react-native-toggle-panel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaygould/react-native-toggle-panel/issues"
+  },
+  "homepage": "https://github.com/jaygould/react-native-toggle-panel#readme"
 }
