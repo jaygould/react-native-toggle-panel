@@ -6,7 +6,9 @@ This module for React Native enables a simple yet powerful toggle panel for your
 
 ### Use your own toggle component
 
-The React Native Toggle Panel is not an accordion layout which is constrained to a top bar which you tap to collapse content. Instead, you're able to set any toggle you like, and simply pass a toggle state to the component. This means you're able to place your toggle button anywhere on your UI.
+The React Native Toggle Panel is not an accordion layout which is constrained to a top bar which you tap to collapse content. Instead, you're able to set any toggle you like, and simply pass a toggle state to the component. This means you're able to place your toggle button anywhere on your UI:
+
+![](example/mock-up.png)
 
 ### Animates to content height dynamically
 

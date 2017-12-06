@@ -47,7 +47,9 @@ class TogglePanel extends Component {
 
 	innerConta = false;
 	componentDidMount() {
-		setTimeout(this._getInnerHeight);
+		if (this.props.isAnimated) {
+			setTimeout(this._getInnerHeight);
+		}
 	}
 
 	_ref(ref) {
@@ -146,16 +148,20 @@ class TogglePanel extends Component {
 
 		//stops the white flash caused by the height of child initially pushing
 		//the wraper out. This is a bit of a hack so needs updating at some point
-		if (this.state.receivedHeight) {
-			flashHack = {
-				opacity: 1,
-				position: 'relative'
-			};
+		if (this.props.isAnimated) {
+			if (this.state.receivedHeight) {
+				flashHack = {
+					opacity: 1,
+					position: 'relative'
+				};
+			} else {
+				flashHack = {
+					opacity: 0,
+					position: 'absolute'
+				};
+			}
 		} else {
-			flashHack = {
-				opacity: 0,
-				position: 'absolute'
-			};
+			flashHack = null;
 		}
 
 		return <View style={[styles.panelWrap, flashHack]}>{chosenView}</View>;
