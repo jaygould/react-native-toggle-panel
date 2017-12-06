@@ -29,12 +29,12 @@ Another nice feature is the flexible parameters for customisation avaliable:
 import TogglePanel from './TogglePanel';
 
 class Parent extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			panelToggle: true
-		};
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      panelToggle: true
+    };
+  }
 
   _panelTogglePress() {
     this.setState({
@@ -44,21 +44,21 @@ class Parent extends Component {
 
   render() {
     return (
-				<Button onPress={() => this._panelTogglePress()} title={'Toggle'} />
-				<CollapsiblePanel
-					collapsed={this.state.panelToggle}
-					position="relative"
-					panelPadding={20}
-					panelBackground="#e3e3e3"
-					isAnimated={true}
-				>
-					<Text>Content</Text>
-					<Text>Content1</Text>
-					<Text>Content2</Text>
-				</CollapsiblePanel>
-      )
+      <Button onPress={() => this._panelTogglePress()} title={'Toggle'} />
+      <CollapsiblePanel
+        collapsed={this.state.panelToggle}
+        position="relative"
+        panelPadding={10}
+        panelBackground="#ffffff"
+        isAnimated={true}
+      >
+        <Text>Content</Text>
+        <Text>Content1</Text>
+        <Text>Content2</Text>
+        ...
+      </CollapsiblePanel>
+    )
   }
-
 }
 export default Parent;
 
