@@ -19,8 +19,8 @@ If you've ever tried doing this yourself you'll know how it's not the easiest th
 Another nice feature is the flexible parameters for customisation avaliable:
 
 * **position**: (string) `absolute` or `relative`
-* **padding**: (int) panel padding
-* **background color**: (string) colour of panel background
+* **panelPadding**: (int) panel padding
+* **panelBackground**: (string) colour of panel background
 * **isAnimated**: (bool) whether animation is applied on transition - fade currently but working on slide/fade too
 
 ## Example
