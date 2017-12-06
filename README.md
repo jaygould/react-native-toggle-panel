@@ -16,11 +16,50 @@ If you've ever tried doing this yourself you'll know how it's not the easiest th
 
 ## Customisation
 
-Another feature is the parameters for customisation avaliable:
+Another nice feature is the flexible parameters for customisation avaliable:
 
-**position** - (string) absolute or relative
-**padding** - (int) panel padding
-**background color** - (string) colour of panel background
-**isAnimated** - (bool) whether animation is applied on transition - fade currently but working on slide/fade too
+* **position**: (string) `absolute` or `relative`
+* **padding**: (int) panel padding
+* **background color**: (string) colour of panel background
+* **isAnimated**: (bool) whether animation is applied on transition - fade currently but working on slide/fade too
 
-More README coming soon.
+## Example
+
+```javascript
+import TogglePanel from './TogglePanel';
+
+class Parent extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			panelToggle: true
+		};
+	}
+
+  _panelTogglePress() {
+    this.setState({
+      collapsiblePanelToggle: !this.state.collapsiblePanelToggle
+    });
+  }
+
+  render() {
+    return (
+				<Button onPress={() => this._panelTogglePress()} title={'Toggle'} />
+				<CollapsiblePanel
+					collapsed={this.state.panelToggle}
+					position="relative"
+					panelPadding={20}
+					panelBackground="#e3e3e3"
+					isAnimated={true}
+				>
+					<Text>Content</Text>
+					<Text>Content1</Text>
+					<Text>Content2</Text>
+				</CollapsiblePanel>
+      )
+  }
+
+}
+export default Parent;
+
+```
