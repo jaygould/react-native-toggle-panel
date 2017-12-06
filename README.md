@@ -38,7 +38,7 @@ class Parent extends Component {
 
   _panelTogglePress() {
     this.setState({
-      collapsiblePanelToggle: !this.state.collapsiblePanelToggle
+      panelToggle: !this.state.panelToggle
     });
   }
 
